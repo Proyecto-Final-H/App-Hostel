@@ -30,6 +30,20 @@ const routes: Routes = [
       import('./menu/menu.module').then((m) => m.MenuPageModule),
     canActivate: [LoginGuard, IntroGuard],
   },
+   {
+    path: 'cajas',
+    loadChildren: () =>
+      import('./cajas/cajas.module').then(
+        (m) => m.CajasPageModule
+      ),
+  },
+  {
+    path: 'caja-detalle',
+    loadChildren: () =>
+      import('./caja-detalle/caja-detalle.module').then(
+        (m) => m.CajaDetallePageModule
+      ),
+  },
 
 @NgModule({
   imports: [
