@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="end">cajas</ion-title>
+    <ion-buttons>
+      <ion-menu-button slot="start"> </ion-menu-button>
+    </ion-buttons>
+<ion-title text-align="center">
+     Cajas
+    </ion-title>
+    <ion-buttons slot="end"><ion-button (click)="alertaLogOut()">
+      <ion-icon name="log-out-outline">
+      </ion-icon></ion-button></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Lista de Ingreso de caja</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header> Ingresos </ion-list-header>
+        <ion-item *ngFor="let resultado of contenidoArray">
+
+        <ion-item>
+           <ion-avatar slot="start">
+            <img src="./avatar-finn.png" />
+          </ion-avatar> 
+          <ion-label>
+            <h3>{{resultado.name}}</h3>
+          </ion-label>
+          <ion-button 
+		  (click)="obtienecaja(resultado.$$instanceId)" 
+		  color="secondary">Datos del caja</ion-button><br>
+          <!-- <ion-button color="secondary">Generar Planilla</ion-button> -->
+        </ion-item>
+        </ion-item>
+
+
+        
+      </ion-list>
+
+      
+    </ion-content>
+  </ion-app> -->
+</ion-content>
