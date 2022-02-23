@@ -29,8 +29,9 @@ export class CajasPage implements OnInit {
       }),
     };
     // this.url +
-    const URL = 'http://localhost:8080/restful/services/simple.CajaMenu/listAll/invoke'
-   // 'http://localhost:8080/restful/services/caja/actions/listAll/invoke'
+    const URL = 'http://localhost:8080/restful/services/simple.CajaMenu/actions/listAll/invoke'
+  //http://localhost:8080/restful/services/simple.CajaMenu/listAll/invoke
+    // 'http://localhost:8080/restful/services/caja/actions/listAll/invoke'
     //  'http://localhost:8080/restful/services/simple.CajaMenu/actions/listAll/invoke';
    //   'http://localhost:8080/restful/services/caja/actions/listAll/invoke';GET /services/simple.CajaMenu/actions/listAll/invoke
    

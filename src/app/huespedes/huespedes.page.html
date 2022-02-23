@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="end">Huespedes</ion-title>
+    <ion-buttons>
+      <ion-menu-button slot="start"> </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Lista de Huespedes</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header> Huespedes  </ion-list-header>
+
+        <ion-item *ngFor="let resultado of contenidoArray">
+          <ion-item>
+             <ion-avatar slot="start">
+              <img src="../../assets/Huesped.png"/>
+            </ion-avatar> 
+            <ion-label>
+              <h2>{{resultado.apellido}}</h2>
+              <h3>{{resultado.name}}</h3>
+              <h3>{{resultado.telefono}}</h3>
+            </ion-label>
+            <ion-button
+              (click)="obtieneHuesped(resultado.$$instanceId)"
+              color="secondary"
+              >Datos del Huesped</ion-button
+            ><br />
+            <!-- <ion-button color="secondary">Generar Planilla</ion-button> -->
+          </ion-item>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-app>
+</ion-content>

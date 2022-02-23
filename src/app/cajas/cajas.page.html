@@ -14,7 +14,7 @@
 </ion-header>
 
 <ion-content>
-  <!-- <ion-app>
+   <ion-app>
     <ion-header translucent>
       <ion-toolbar>
         <ion-title>Lista de Ingreso de caja</ion-title>
@@ -28,10 +28,12 @@
 
         <ion-item>
            <ion-avatar slot="start">
-            <img src="./avatar-finn.png" />
+            <img src="../../assets/Caja.png"/>
           </ion-avatar> 
           <ion-label>
             <h3>{{resultado.name}}</h3>
+            <h3>{{resultado.fecha}}</h3>Importe
+            <h3>{{resultado.importe}}</h3>
           </ion-label>
           <ion-button 
 		  (click)="obtienecaja(resultado.$$instanceId)" 
@@ -46,5 +48,5 @@
 
       
     </ion-content>
-  </ion-app> -->
+  </ion-app> 
 </ion-content>

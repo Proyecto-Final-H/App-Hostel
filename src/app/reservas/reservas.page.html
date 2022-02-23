@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="end">Reservas</ion-title>
+    <ion-buttons>
+      <ion-menu-button slot="start"> </ion-menu-button>
+    </ion-buttons>
+    <ion-title text-align="center">
+     Reclamos
+    </ion-title>
+    <ion-buttons slot="end"><ion-button (click)="alertaLogOut()">
+      <ion-icon name="log-out-outline">
+      </ion-icon></ion-button></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Lista de Reservas</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header> Reservas  </ion-list-header>
+
+        <ion-item *ngFor="let resultado of contenidoArray">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="../../assets/Rerserva.png"/>
+            </ion-avatar> 
+            <ion-label>
+              <h4>Numero de Reserva</h4>
+              <h3>{{resultado.nombre}}</h3>
+              <h4>Fecha de Ingreso</h4>
+              <h3>{{resultado.fechaAlta}}</h3>
+              <h4>Estado</h4>
+              <h3>{{resultado.estado}}</h3>
+              <h4>Cantidad de dias<h3>{{resultado.cantdias}}</h3></h4>
+              <h4>Precio</h4><h3>{{resultado.precio}}</h3>
+          <!--    <h3>{{resultado.huesped}}</h3>
+              <h3>{{resultado.habitacion}}</h3>-->
+            </ion-label>
+            <ion-button
+              (click)="obtieneReserva(resultado.$$instanceId)"
+              color="secondary"
+              >Datos de Reserva</ion-button
+            ><br />
+            <!-- <ion-button color="secondary">Generar Planilla</ion-button> -->
+          </ion-item>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-app>
+</ion-content>
